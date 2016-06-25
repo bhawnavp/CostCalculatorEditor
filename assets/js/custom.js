@@ -4,7 +4,9 @@ $(document).ready(function() {
     $('.side-scroll').slimScroll({
         height: '91vh'
     });
-
+    $('.panel-scroll').slimScroll({
+        height: '82vh'
+    });
     /* switch js */
     $.fn.bootstrapSwitch.defaults.onColor = 'blue';
     $.fn.bootstrapSwitch.defaults.offColor = 'orange';

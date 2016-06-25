@@ -70,7 +70,7 @@
                                 </h4>
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse in">
-                                <div class="panel-body">
+                                <div class="panel-body panel-scroll">
                                     <div class="ed-sidebar-layout">
                                         <a href="">Landing Page</a>
                                     </div>
@@ -197,7 +197,7 @@
     <!--landing layout start -->
     <div id="sidebar" class="col-xs-6 col-sm-3 sidebar-offcanvas affix position-right">
         <div class="sidebar-layout side-scroll">
-            <div class="main-side hide">
+            <div class="main-side hide" >
                 <div class="sidebar-topselector">
                     <div class="card-layout">
                         Landing Page Properties
@@ -308,7 +308,7 @@
                     </div>
                 </div>
             </div>
-            <div class="main-side hide">
+            <div class="main-side" for="numeric-input">
                 <div class="sidebar-topselector">
                     <div class="card-layout">
                         Question Properties:
@@ -317,13 +317,15 @@
                 <div class="sidebar-bottomselector">
                     <div class="type-details">
                         <div class="btn-detail-size col-xs-12 no-padding">
-                            <span class="col-xs-2 no-padding">Type:</span>
+                            <span class="form-label">Type:</span>
+                            <div class="col-md-5">
                             <select class="select-default" data-width="fit">
                                 <option>Numeric Type</option>
                                 <option>Text</option>
                                 <option>Email</option>
                                 <option>Password</option>
                             </select>
+                            </div>
                         </div>
                     </div>
                     <div class="col-xs-12 no-padding">
@@ -671,7 +673,71 @@
                     </div>
                 </div>
             </div>
-            <div class="main-side">
+            <div class="main-side hide">
+                <div class="sidebar-topselector">
+                    <div class="card-layout">
+                        Question1
+                    </div>
+                </div>
+                <div class="sidebar-bottomselector">
+                    <div class="type-details">
+                    <p class="type-head">Question:</p>
+                    <input type="text" class="form-text" placeholder="placeholder">
+                    </div>
+                    <div class="col-xs-12 no-padding">
+                        
+                        <div class="heading-box">
+                            <div class="heading-box-top">
+                                <select class="select-default pull-right" data-width="fit" data-style="landing-dropdown">
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                    <option>Variable</option>
+                                </select>
+                                <ul class="heading-editor">
+                                    <li><a href="javascript:void(0);"><i class="material-icons">format_bold</i></a></li>
+                                    <li><a href="javascript:void(0);"><i class="material-icons">format_italic</i></a></li>
+                                    <li><a href="javascript:void(0);"><i class="material-icons">format_color_text</i></a></li>
+                                </ul>
+                            </div>
+                            <textarea type="text" value="" class="heading-box-topinput" rows="3"></textarea>
+                        </div>
+                        <div class="lan-description">
+                            <span>Description:</span>
+                            <div class="desc-switch">
+                                <input type="checkbox" name="properties-checkbox" data-size="mini" data-on-color="blue">
+                            </div>
+                        </div>
+                        <div class="type-details">
+                            <div class="col-xs-12 no-padding text-group ">
+                                <div class=" placeholder-text">
+                                    <input type="text" class="form-text" placeholder="placeholder">
+                                </div>
+                                <!-- More button -->
+                                <div class="btn-group  more-options">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more</i>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li><a href="#">Action</a></li>
+                                        <li><a href="#">Another action</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="type-details">
+                            <label class="check">
+                                <input type="checkbox" value="Value1 " name="checkbox1" id="check1">
+                                <label for="check1"> </label>
+                                <div> Mark as Mandatory</div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-side hide">
                 <div class="sidebar-topselector">
                     <div class="card-layout">
                         Question1
