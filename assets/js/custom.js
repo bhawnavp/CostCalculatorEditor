@@ -1,7 +1,7 @@
-$(document).ready(function () {
+$(document).ready(function() {
 
     /* slimscroll js */
-    $('.landing-scroll').slimScroll({
+    $('.side-scroll').slimScroll({
         height: '91vh'
     });
 
@@ -13,10 +13,10 @@ $(document).ready(function () {
     });
 
     /* file upload js */
-    $(function () {
+    $(function() {
 
         // We can attach the `fileselect` event to all file inputs on the page
-        $(document).on('change', ':file', function () {
+        $(document).on('change', ':file', function() {
             var input = $(this),
                 numFiles = input.get(0).files ? input.get(0).files.length : 1,
                 label = input.val().replace(/\\/g, '/').replace(/.*\//, '');
@@ -24,27 +24,27 @@ $(document).ready(function () {
         });
 
         // We can watch for our custom `fileselect` event like this
-        $(document).ready(function () {
-            $(':file').on('fileselect', function (event, numFiles, label) {
+        $(document).ready(function() {
+            $(':file').on('fileselect', function(event, numFiles, label) {
 
                 var input = $(this).parents('.input-group').find(':text'),
                     log = numFiles > 1 ? numFiles + ' files selected' : label;
 
-                    if (input.length) {
-                        input.val(log);
-                    } else {
-                        if (log) alert(log);
-                    }
+                if (input.length) {
+                    input.val(log);
+                } else {
+                    if (log) alert(log);
+                }
 
-                });
             });
-
         });
 
-        /* wysiwyg editor */
-       
+    });
 
-        /* wysiwyg editor */
+    /* wysiwyg editor */
+
+
+    /* wysiwyg editor */
 
 
 
@@ -52,18 +52,17 @@ $(document).ready(function () {
 });
 
 /* tabs js */
-$('ul.nav.nav-tabs  a').click(function (e) {
+$('ul.nav.nav-tabs  a').click(function(e) {
     e.preventDefault();
     $(this).tab('show');
 });
 
-(function ($) {
+(function($) {
     // Test for making sure event are maintained
-    $('.js-alert-test').click(function () {
+    $('.js-alert-test').click(function() {
         alert('Button Clicked: Event was maintained');
     });
     fakewaffle.responsiveTabs(['xs', 'sm']);
 })(jQuery);
 
 /* tabs js end */
-
