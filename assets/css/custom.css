@@ -385,47 +385,47 @@ input.ed-projectname {
     color: #f56151;
 }
 
-.ed-sidebar-layout {
+.ed-sidebar {
     display: block;
     padding: 13px 20px;
     /*border-bottom:1px solid #dae2e6;*/
 }
 
-.ed-sidebar-layout a {
+.ed-sidebar a {
     transition: all 200ms ease-in 0s;
     color: #269fd8;
     font-size: 13px;
 }
 
-.ed-sidebar-layout a:hover {
+.ed-sidebar a:hover {
     text-decoration: none;
     color: #f56151;
 }
 
-.ed-sidebar-questions {
+.ed-sidebar {
     display: block;
     padding: 13px 20px;
     padding-right: 10px;
     /*border-bottom:1px solid #dae2e6;*/
 }
 
-.ed-sidebar-questions a {
+.ed-sidebar a {
     transition: all 200ms ease-in 0s;
     color: #269fd8;
     font-size: 13px;
 }
 
-.ed-sidebar-questions a:hover {
+.ed-sidebar a:hover {
     text-decoration: none;
     color: #f56151;
 }
 
-.ed-sidebar-questions-sub {
+.ed-sidebar-sub {
     padding-left: 10px;
     margin-top: 15px;
 }
 
-.ed-sidebar-questions-sub label {
+.ed-sidebar-sub label {
     font-weight: normal;
     color: #62696d;
     background: #f6f8f9;
@@ -434,75 +434,75 @@ input.ed-projectname {
     border-radius: 5px;
 }
 
-.ed-sidebar-questions-sub ul {
+.ed-sidebar-sub ul {
     padding: 0px;
     padding-left: 25px;
 }
 
-.ed-sidebar-questions-sub ul li {
+.ed-sidebar-sub ul li {
     list-style-type: decimal;
     font-size: 13px;
     transition: all 200ms ease-in 0s;
     margin-bottom: 5px;
 }
 
-.ed-sidebar-questions-sub ul li:hover .sublist-action {
+.ed-sidebar-sub ul li:hover .sublist-action {
     display: inline-block;
     vertical-align: middle;
 }
 
-.ed-sidebar-questions-sub ul li span {
+.ed-sidebar-sub ul li span {
     width: 77%;
     position: relative;
     display: inline-block;
     top: 4px;
 }
 
-.ed-sidebar-questions-sub ul li a {
+.ed-sidebar-sub ul li a {
     display: none;
     transition: all 200ms ease-in 0s;
 }
 
-.ed-sidebar-questions-sub ul li a i {
+.ed-sidebar-sub ul li a i {
     color: #8e989f;
     font-size: 13px;
 }
 
-.ed-sidebar-questions-sub ul li a i:hover {
+.ed-sidebar-sub ul li a i:hover {
     color: #f56151;
 }
 
-.ed-sidebar-result {
+.ed-sidebar {
     display: block;
     padding: 13px 20px;
     padding-right: 10px;
     border-bottom: 1px solid #dae2e6;
 }
 
-.ed-sidebar-result a {
+.ed-sidebar a {
     transition: all 200ms ease-in 0s;
     color: #269fd8;
     font-size: 13px;
 }
 
-.ed-sidebar-result a i {
+.ed-sidebar a i {
     font-size: 14px;
     position: relative;
     top: 4px;
     float: right;
 }
 
-.ed-sidebar-result a:hover {
+.ed-sidebar a:hover {
     text-decoration: none;
     color: #f56151;
 }
 
-.ed-sidebar-result-sub {
+.ed-sidebar-sub {
     padding-left: 0px;
     margin-top: 15px;
 }
 
-.ed-sidebar-result-sub label {
+.ed-sidebar-sub label {
     font-weight: normal;
     color: #62696d;
     background: #f6f8f9;
@@ -511,25 +511,25 @@ input.ed-projectname {
     border-radius: 5px;
 }
 
-.ed-sidebar-result-sub ul {
+.ed-sidebar-sub ul {
     padding: 0px;
     padding-left: 25px;
 }
 
-.ed-sidebar-result-sub ul li {
+.ed-sidebar-sub ul li {
     list-style-type: decimal;
     font-size: 13px;
     transition: all 200ms ease-in 0s;
     margin-bottom: 5px;
 }
 
-.ed-sidebar-result-sub ul li:hover .sublist-action {
+.ed-sidebar-sub ul li:hover .sublist-action {
     display: inline-block;
     position: relative;
     top: -2px;
 }
 
-.ed-sidebar-result-sub ul li span {
+.ed-sidebar-sub ul li span {
     width: 98%;
     display: inline-block;
 }
