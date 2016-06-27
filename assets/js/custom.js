@@ -68,3 +68,15 @@ $('ul.nav.nav-tabs  a').click(function(e) {
 })(jQuery);
 
 /* tabs js end */
+
+/* On click outside the div hide sidebar container */
+$(document).mouseup(function(e) {
+    var container = $("#sidebar");
+
+    if (!container.is(e.target) // if the target of the click isn't the container...
+        && container.has(e.target).length === 0) // ... nor a descendant of the container
+    {
+        container.hide();
+    }
+});
+/* End of funtion */
