@@ -1006,7 +1006,6 @@ input.ed-projectname {
     line-height: 24px;
     float: left;
     min-width: 17px;
-    margin-left: 1px;
 }
 
 .text-group {
@@ -1024,11 +1023,7 @@ input.ed-projectname {
 .check {
     width: 100%;
     font-weight: normal;
-}
-
-.check-icon input[type="checkbox"] {
-    left: -9999px;
-    position: absolute;
+    margin-bottom: 0px;
 }
 
 .check label {
@@ -1037,6 +1032,7 @@ input.ed-projectname {
     height: 18px;
     border: 1px solid #dae2e6;
     margin-right: 10px;
+    float: left; 
 }
 
 .check label::after {
@@ -1044,11 +1040,6 @@ input.ed-projectname {
     font-size: 13px;
     left: 1px;
     color: #8e989f;
-}
-
-.check-icon input[type="checkbox"]:checked + label {
-    position: relative;
-    top: 10px;
 }
 
 .check input[type="checkbox"]:checked + label::after {
@@ -1060,13 +1051,6 @@ input.ed-projectname {
     left: -9999px;
     position: absolute;
 }
-
-.check div {
-    display: inline-block;
-    position: relative;
-    top: -9px;
-}
-
 .check input[type="checkbox"]:checked + label + div {
     display: inline-block;
     position: relative;
@@ -1177,7 +1161,8 @@ a.default:active {
     border-radius: 20px;
     padding: 1px 6px;
     color: #fff;
-    margin-left: -5px;
+    font-size: 11px;
+    margin-left: -2px;
 }
 
 .placeholder-text {
@@ -1185,6 +1170,70 @@ a.default:active {
     width: 96%;
     padding-right: 15px;
     float: left;
+}
+
+
+/*helptip*/
+
+.help-tip i {
+    color: #bec5c9;
+    font-size: 13px;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.help-checktip {
+    float: left;
+    background-color: #464655;
+    color: #fff;
+    padding: 5px;
+    width: 185px;
+    font-size: 11px;
+    border-radius: 4px;
+    position: absolute;
+    top: -39px;
+    left: 39px;
+    border: 1px solid #d3d3d3;
+    border-radius: 3px;
+    visibility: hidden;
+    box-shadow: 0 1px 1px #f0f0f1;
+    text-align: center;
+    left: -83px;
+}
+
+.help-checktip:before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -8px;
+    width: 10px;
+    height: 10px;
+    border-top: 6px solid #464655;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+}
+
+.help-tip {
+    margin: 1px 7px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    color: rgba(40, 112, 145, 0.6);
+    margin: 0px;
+}
+
+.help-tip:hover > .help-checktip {
+    visibility: visible;
+    z-index: 999;
+}
+
+.more-options .dropdown-menu {
+    top: 70%;
+    left: -103px;
+    min-width: 130px;
+    font-size: 12px;
+    border-radius: 0px;
 }
 
 
