@@ -592,7 +592,7 @@ input.ed-projectname {
 
 .editor-template-tabs .tab-content {
     border-top: 1px solid #dae2e6;
-    padding: 20px;
+    padding: 60px 0px 0px 0px;
     background-image: url('../../assets/images/build-bg.jpg');
 }
 
