@@ -83,3 +83,7 @@ $(document).mouseup(function(e) {
     }
 });
 /* End of funtion */
+$(document).on('click', '.editor-tab', function() {
+    var toggleValue = $(this).data("toggle");
+    //console.log(toggleValue);
+})

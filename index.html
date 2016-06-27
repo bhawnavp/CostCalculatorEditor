@@ -74,11 +74,11 @@
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse in">
                                 <div class="panel-body panel-scroll">
-                                    <div class="ed-sidebar">
-                                        <a href="">Landing Page</a>
+                                    <div class="ed-sidebar editor-tab" data-toggle="landing">
+                                        <a href="#">Landing Page</a>
                                     </div>
-                                    <div class="ed-sidebar">
-                                        <a href="">Questionner</a>
+                                    <div class="ed-sidebar editor-tab" data-toggle="question">
+                                        <a href="#">Questionner</a>
                                         <div class="ed-sidebar-sub">
                                             <label>Platform</label>
                                             <ul>
@@ -120,8 +120,8 @@
                                             </ul>
                                         </div>
                                     </div>
-                                    <div class="ed-sidebar">
-                                        <a href="">Result Page <i class="material-icons">navigate_next</i></a>
+                                    <div class="ed-sidebar editor-tab" data-toggle="result">
+                                        <a href="#">Result Page <i class="material-icons">navigate_next</i></a>
                                         <div class="ed-sidebar-sub">
                                             <ul>
                                                 <li>
@@ -177,7 +177,7 @@
     <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 no-padding">
         <div class="editor-template-tabs">
             <div class="template-section" id="build">
-                <section class="main-bg">
+                <section class="landing-page main-bg">
                     <header>
                         <div class="col-md-12 col-sm-12 col-xs-12">
                             <div class="col-md-6 col-sm-6 col-xs-12 logo">
@@ -190,7 +190,7 @@
                     <!-- Header Section End-->
                     <div class="main-section ">
                         <!-- Content Section-->
-                        <div class="landing-page">
+                        <div class="landing-page" data-section="landing">
                             <h1 class="main-head">Heading Goes here</h1>
                             <h2 class="sub-head">Optional sub heading goes here</h2>
                             <p class="description">
@@ -200,6 +200,8 @@
                         </div>
                     </div>
                 </section>
+                <section class="question-page hide" data-section="question"></section>
+                <section class="result-page hide" data-section="result"></section>
             </div>
         </div>
     </div>
