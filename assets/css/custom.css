@@ -462,7 +462,9 @@ input.ed-projectname {
     border-left: 1px solid #e9eef0;
     padding-top: 20px;
 }
-
+.editor-accordion .ed-sidebar:last-child{
+    padding-bottom:20px;
+}
 .ed-sidebar a i {
     font-size: 14px;
     position: relative;
@@ -1213,6 +1215,9 @@ a.default:active {
     vertical-align: middle;
         background: #fff;
         top: -1px;
+}
+.circle.active{
+    background:#fb545b ;
 }
 .panel-title i{
     display: inline-block;
