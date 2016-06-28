@@ -72,20 +72,29 @@ $('ul.nav.nav-tabs  a').click(function(e) {
 /* On click outside the div hide sidebar container */
 $(document).mouseup(function(e) {
     var container = $("#sidebar");
-
+    // if ($('.ed-sidebar a').is(e.target)) {
+    //     alert("hello");
+    // }
     if (!container.is(e.target) // if the target of the click isn't the container...
-        && container.has(e.target).length === 0) // ... nor a descendant of the container
+        && (container.has(e.target).length === 0)) // ... nor a descendant of the container
     {
-        container.hide('slide', {
-            direction: 'right',
-            easing: 'linear'
-        }, 400);
+        if (!$('.ed-sidebar a').is(e.target)) {
+            container.hide('slide', {
+                direction: 'right',
+                easing: 'linear'
+            }, 400);
+        } else {
+            container.show('slide', {
+                direction: 'right',
+                easing: 'linear'
+            }, 400);
+        }
     }
 });
 /* End of funtion */
-$(document).on('click', '.editor-tab', function() {
-    var toggleValue = $(this).data("toggle");
-    console.log('*[data-section="' + toggleValue + '"]');
-    $('*[data-section="' + toggleValue + '"]').removeClass('hide').siblings().addClass('hide');
+// $(document).on('click', '.editor-tab', function() {
+//     var toggleValue = $(this).data("toggle");
+//     console.log('*[data-section="' + toggleValue + '"]');
+//     $('*[data-section="' + toggleValue + '"]').removeClass('hide').siblings().addClass('hide');
 
-})
+// })
