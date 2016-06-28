@@ -4,7 +4,7 @@ $(document).ready(function() {
     $('.side-scroll').slimScroll({
         height: '94vh'
     });
-    $('.panel-scroll').slimScroll({
+    $('.panel-scroll1').slimScroll({
         height: '82vh'
     });
     /* switch js */
