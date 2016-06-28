@@ -77,8 +77,11 @@ input:focus,
 textarea:focus,
 select:focus {
     outline: none;
+    text-decoration:none;
 }
-
+a:hover, a:focus{
+    text-decoration:none;
+}
 .ellipsis {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -330,13 +333,20 @@ input.ed-projectname {
 }
 
 .editor-accordion .panel-heading .panel-title a {
-    font-size: 15px;
+    font-size: 13px;
     display: block;
     margin-left: 25px;
     border-left: 1px solid #e9eef0;
-        padding: 15px 0px;
+    padding: 15px 0px;
+    color: #62696d;
+    margin-top: 2px;
+        text-transform: uppercase;
 }
-
+.ed-sidebar a {
+    color: #8e989f;
+    text-transform: uppercase;
+    font-size: 13px;
+}
 .editor-accordion .panel-group .panel + .panel {
     margin-top: 0px;
 }
@@ -386,22 +396,19 @@ input.ed-projectname {
 }
 
 .ed-sidebar a.sub-head {
-transition: all 200ms ease-in 0s;
+    transition: all 200ms ease-in 0s;
     color: #269fd8;
     font-size: 13px;
     padding-top: 15px;
     display: block;
     padding-left: 20px;
+    color: #62696d;
+    text-transform: none;
 }
+
 
 .ed-sidebar a:hover {
     text-decoration: none;
-    color: #f56151;
-}
-
-.ed-sidebar a:hover {
-    text-decoration: none;
-    color: #f56151;
 }
 
 .ed-sidebar-sub {}
@@ -428,9 +435,10 @@ transition: all 200ms ease-in 0s;
 }
 
 .ed-sidebar-sub ul li a.head {
-    width: 77%;
+    width: 70%;
     display: inline-block;
-        padding-top: 15px;
+    padding-top: 13px;
+    text-transform: none;
 }
 
 .ed-sidebar-sub ul li a.sublist-action {
@@ -462,10 +470,6 @@ transition: all 200ms ease-in 0s;
     float: right;
 }
 
-.ed-sidebar a:hover {
-    text-decoration: none;
-    color: #f56151;
-}
 
 .ed-sidebar-sub label {
     font-weight: normal;
@@ -1208,6 +1212,7 @@ a.default:active {
     left: -6px;
     vertical-align: middle;
         background: #fff;
+        top: -1px;
 }
 .panel-title i{
     display: inline-block;
@@ -1216,6 +1221,7 @@ a.default:active {
     vertical-align: middle;
     font-size: 14px;
     color: #fb545b;
+        top: -1px;
 }
 .editor-accordion .panel-title{
         border-bottom: 1px solid #e9eef0;
