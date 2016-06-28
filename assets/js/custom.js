@@ -92,9 +92,9 @@ $(document).mouseup(function(e) {
     }
 });
 /* End of funtion */
-// $(document).on('click', '.editor-tab', function() {
-//     var toggleValue = $(this).data("toggle");
-//     console.log('*[data-section="' + toggleValue + '"]');
-//     $('*[data-section="' + toggleValue + '"]').removeClass('hide').siblings().addClass('hide');
+$(document).on('click', '.editor-tab', function() {
+    var toggleValue = $(this).data("toggle");
+    //console.log('*[data-section="' + toggleValue + '"]');
+    $('*[data-section="' + toggleValue + '"]').removeClass('hide').siblings().addClass('hide');
 
-// })
+})
