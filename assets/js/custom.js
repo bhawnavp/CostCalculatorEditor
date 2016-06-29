@@ -89,6 +89,17 @@ $(document).mouseup(function(e) {
     }
 });
 /* End of funtion */
+$(document).on('click', 'a.visible', function() {
+	if(!$(this).hasClass('disable')){
+    $("a.visible").html('<i class="material-icons visibility_off">visibility_off</i>');
+	$('.visible-parent a').addClass('disable');}
+	else{
+		$("a.visible").html('<i class="material-icons">visibility</i>');
+	$('.visible-parent a').removeClass('disable');
+	}
+
+})
+
 $(document).on('click', '.editor-tab', function() {
     var toggleValue = $(this).data("toggle");
     //console.log('*[data-section="' + toggleValue + '"]');
