@@ -118,7 +118,7 @@ a:hover, a:focus{
 }
 
 .blue-text {
-    color: #269fd8;
+    color: #fb545b;
 }
 
 .grey-text {
@@ -126,7 +126,7 @@ a:hover, a:focus{
 }
 
 .btn-basic {
-    color: #269fd8;
+    color: #fb545b;
     border: 1px solid #dae2e6;
     font-size: 13px;
 }
@@ -205,7 +205,7 @@ a:hover, a:focus{
 input.ed-projectname {
     border: none;
     border-left: 1px solid #dae2e6;
-    color: #5cc9e6;
+    color: #fb545b;
     float: left;
     font-size: 18px;
     margin-top: 13px;
@@ -249,7 +249,7 @@ input.ed-projectname {
 
 .ed-projectname {
     border-left: 1px solid #dae2e6;
-    color: #5cc9e6;
+    color: #fb545b;
     float: left;
     font-size: 18px;
     margin-top: 13px;
@@ -275,7 +275,7 @@ input.ed-projectname {
 
 .navbar-leftside {
     border-left: 1px solid #dae2e6;
-    color: #5cc9e6;
+    color: #fb545b;
     font-size: 18px;
     margin-left: 5px;
     padding-bottom: 5px;
@@ -407,7 +407,7 @@ input.ed-projectname {
 }
 
 .page-add a i:hover {
-    color: #269fd8;
+    color: #fb545b;
 }
 
 .page-add a i {
@@ -417,7 +417,7 @@ input.ed-projectname {
 
 .ed-sidebar a.sub-head {
     transition: all 200ms ease-in 0s;
-    color: #269fd8;
+    color: #fb545b;
     font-size: 12px;
     padding-top: 20px;
     display: block;
@@ -450,10 +450,6 @@ input.ed-projectname {
 .ed-sidebar-sub ul li{
     line-height:1;
 }
-.ed-sidebar-sub ul li:hover .sublist-action {
-    display: inline-block;
-    vertical-align: middle;
-}
 
 .ed-sidebar-sub ul li a.head {
     width: 90%;
@@ -466,10 +462,13 @@ input.ed-projectname {
 .ed-sidebar-sub ul li a.sublist-action {
     display: none;
     transition: all 200ms ease-in 0s;
+	    line-height: 26px;
+    vertical-align: bottom;
+	    margin-right: 4px;
 }
 
 .ed-sidebar-sub ul li a i {
-    color: #8e989f;
+    color: #fb545b;
     font-size: 13px;
 }
 
@@ -507,8 +506,8 @@ input.ed-projectname {
 
 .ed-sidebar-sub ul li:hover .sublist-action {
     display: inline-block;
-    position: relative;
-    top: -2px;
+    line-height: 1;
+    margin-top: 10px;
 }
 
 
@@ -1260,9 +1259,9 @@ a.default:active {
 	    line-height: 23px;
 }
 .add-options .dropdown-menu {
-    top: 70%;
-    left: -103px;
-    min-width: 130px;
+top: 100%;
+    left: -13px;
+    min-width: 150px;
     font-size: 12px;
     border-radius: 0px;
     background: #f87b80;
@@ -1270,8 +1269,16 @@ a.default:active {
     border-radius: 4px;
     border: none;
 }
+.add-options .dropdown-menu > li > a:hover,.add-options .dropdown-menu > li > a:focus {
+    color: #fb545b;
+}
+.add-options .dropdown-menu > li > a:hover .add-options-i,.add-options .dropdown-menu > li > a:focus .add-options-i {
+    color: #fb545b;
+}
 .add-options .dropdown-menu > li > a{
 	color:#fff;
+	    padding: 3px 15px;
+    text-transform: capitalize;
 }
 .add-options .add-options-i {
     color: #fff;
