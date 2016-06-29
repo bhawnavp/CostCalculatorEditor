@@ -1,25 +1,46 @@
-/* font kit start */
-
 @font-face {
-    font-family: 'robotobold';
-    src: url('../fonts/roboto-bold-webfont.woff2') format('woff2'), url('../fonts/roboto-bold-webfont.woff') format('woff'), url('../fonts/roboto-bold-webfont.ttf') format('truetype'), url('../fonts/roboto-bold-webfont.svg#robotobold') format('svg');
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.eot');
+	src: url('../fonts/montserrat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff'),
+         url('../fonts/montserrat-regular-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+	font-smooth: always;
+  -webkit-font-smoothing: antialiased;
+
+}
+@font-face {
+    font-family: "montserratbold";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/montserrat-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-bold-webfont.woff2") format("woff2"), url("../fonts/montserrat-bold-webfont.woff") format("woff"), url("../fonts/montserrat-bold-webfont.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'robotolight';
-    src: url('../fonts/roboto-light-webfont.woff2') format('woff2'), url('../fonts/roboto-light-webfont.woff') format('woff'), url('../fonts/roboto-light-webfont.ttf') format('truetype'), url('../fonts/roboto-light-webfont.svg#robotolight') format('svg');
-    font-weight: normal;
+    font-family: "montserratlight";
     font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/montserrat-light-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-light-webfont.woff2") format("woff2"), url("../fonts/montserrat-light-webfont.woff") format("woff"), url("../fonts/montserrat-light-webfont.ttf") format("truetype");
+}
+@font-face {
+    font-family: "montserrathairline";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/montserrat-hairline-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/montserrat-hairline-webfont.woff2") format("woff2"), url("../fonts/montserrat-hairline-webfont.woff") format("woff"), url("../fonts/montserrat-hairline-webfont.ttf") format("truetype");
 }
 
+
 @font-face {
-    font-family: 'robotoregular';
-    src: url('../fonts/roboto-regular-webfont.woff2') format('woff2'), url('../fonts/roboto-regular-webfont.woff') format('woff'), url('../fonts/roboto-regular-webfont.ttf') format('truetype'), url('../fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'SourceSansPro-Semibold';
+	src: url('fonts/SourceSansPro-Semibold.eot');
+	src: local('☺'), url('fonts/SourceSansPro-Semibold.woff') format('woff'), url('fonts/SourceSansPro-Semibold.ttf') format('truetype'), url('fonts/SourceSansPro-Semibold.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
+
+
 
 @font-face {
     font-family: 'Material Icons';
@@ -60,7 +81,7 @@
 /*################### common css start ###################*/
 
 body {
-    font-family: robotoregular;
+    font-family: 'montserratregular';
     color: #8e989f;
     padding-top: 63px;
 }
@@ -335,17 +356,16 @@ input.ed-projectname {
 .editor-accordion .panel-heading .panel-title a {
     font-size: 13px;
     display: block;
-    margin-left: 25px;
+    margin-left: 15px;
     border-left: 1px solid #e9eef0;
     padding: 15px 0px;
     color: #62696d;
     margin-top: 2px;
-        text-transform: uppercase;
 }
 .ed-sidebar a {
-    color: #8e989f;
+       color: #fb545b;
     text-transform: uppercase;
-    font-size: 13px;
+    font-size: 12px;
 }
 .editor-accordion .panel-group .panel + .panel {
     margin-top: 0px;
@@ -398,12 +418,13 @@ input.ed-projectname {
 .ed-sidebar a.sub-head {
     transition: all 200ms ease-in 0s;
     color: #269fd8;
-    font-size: 13px;
-    padding-top: 15px;
+    font-size: 12px;
+    padding-top: 20px;
     display: block;
     padding-left: 20px;
     color: #62696d;
     text-transform: none;
+	line-height:1;
 }
 
 
@@ -435,10 +456,11 @@ input.ed-projectname {
 }
 
 .ed-sidebar-sub ul li a.head {
-    width: 70%;
-    display: inline-block;
-    padding-top: 13px;
+    width: 90%;
+    display: block;
+    padding-top: 16px;
     text-transform: none;
+	    color: #8e989f;
 }
 
 .ed-sidebar-sub ul li a.sublist-action {
@@ -457,21 +479,16 @@ input.ed-projectname {
 
 .ed-sidebar {
     display: block;
-    margin-left: 25px;
+    margin-left: 15px;
     /* border-bottom: 1px solid #dae2e6; */
     border-left: 1px solid #e9eef0;
     padding-top: 20px;
+	    padding-left: 9px;
+		    padding-right: 10px;
 }
 .editor-accordion .ed-sidebar:last-child{
     padding-bottom:20px;
 }
-.ed-sidebar a i {
-    font-size: 14px;
-    position: relative;
-    top: 4px;
-    float: right;
-}
-
 
 .ed-sidebar-sub label {
     font-weight: normal;
@@ -1054,48 +1071,48 @@ input.ed-projectname {
     line-height: 34px;
 }
 
-.more-options .btn {
+.icon-options .btn {
     border: none;
     padding: 0px;
 }
 
-.more-options.open .btn-default:focus,
-.more-options.open .btn-default:hover,
-.more-options.open .btn-default:active {
+.icon-options.open .btn-default:focus,
+.icon-options.open .btn-default:hover,
+.icon-options.open .btn-default:active {
     background: none;
     box-shadow: none;
     border: none;
 }
 
-.more-options .btn-default:focus,
-.more-options .btn-default:hover,
-.more-options .btn-default:active {
+.icon-options .btn-default:focus,
+.icon-options .btn-default:hover,
+.icon-options .btn-default:active {
     background: none;
     box-shadow: none;
     border: none;
 }
 
-.more-options.btn-group.open .dropdown-toggle {
+.icon-options.btn-group.open .dropdown-toggle {
     -webkit-box-shadow: none;
     box-shadow: none;
     background: none;
 }
 
-.more-options .btn-default:active:hover,
-.more-options .btn-default.active:hover,
-.more-options.open > .dropdown-toggle.btn-default:hover,
-.more-options .btn-default:active:focus,
-.more-options .btn-default.active:focus,
-.more-options.open > .dropdown-toggle.btn-default:focus,
-.more-options .btn-default:active.focus,
-.more-options .btn-default.active.focus,
-.more-options.open > .dropdown-toggle.btn-default.focus {
+.icon-options .btn-default:active:hover,
+.icon-options .btn-default.active:hover,
+.icon-options.open > .dropdown-toggle.btn-default:hover,
+.icon-options .btn-default:active:focus,
+.icon-options .btn-default.active:focus,
+.icon-options.open > .dropdown-toggle.btn-default:focus,
+.icon-options .btn-default:active.focus,
+.icon-options .btn-default.active.focus,
+.icon-options.open > .dropdown-toggle.btn-default.focus {
     color: #333;
     background: none;
     border: none;
 }
 
-.more-options i {
+.icon-options i {
     font-size: 14px;
     line-height: 28px;
     color: #c2c9cd;
@@ -1189,7 +1206,7 @@ a.default:active {
     z-index: 999;
 }
 
-.more-options .dropdown-menu {
+.icon-options .dropdown-menu {
     top: 70%;
     left: -103px;
     min-width: 130px;
@@ -1211,7 +1228,7 @@ a.default:active {
     display: inline-block;
     border-radius: 25px;
     position: relative;
-    left: -6px;
+    left: -15px;
     vertical-align: middle;
         background: #fff;
         top: -1px;
@@ -1219,15 +1236,45 @@ a.default:active {
 .circle.active{
     background:#fb545b ;
 }
-.panel-title i{
+.panel-title i.corner{
     display: inline-block;
     position: relative;
     left: -8px;
     vertical-align: middle;
     font-size: 14px;
-    color: #fb545b;
+    color: #8e989f;
         top: -1px;
+}
+.panel-title i.main-ic{
+	font-size: 16px;
+    vertical-align: text-bottom;
+    margin-right: 4px;
+	color: #bec5c9;
 }
 .editor-accordion .panel-title{
         border-bottom: 1px solid #e9eef0;
+}
+.add-options i{
+	    font-size: 14px;
+    color: #fb545b;
+	    line-height: 23px;
+}
+.add-options .dropdown-menu {
+    top: 70%;
+    left: -103px;
+    min-width: 130px;
+    font-size: 12px;
+    border-radius: 0px;
+    background: #f87b80;
+    /* color: #fff; */
+    border-radius: 4px;
+    border: none;
+}
+.add-options .dropdown-menu > li > a{
+	color:#fff;
+}
+.add-options .add-options-i {
+    color: #fff;
+    vertical-align: sub;
+	margin-right: 5px;
 }
