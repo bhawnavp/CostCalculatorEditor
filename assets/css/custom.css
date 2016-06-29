@@ -354,16 +354,17 @@ input.ed-projectname {
 }
 
 .editor-accordion .panel-heading .panel-title a {
-    font-size: 13px;
+    font-size: 12px;
     display: block;
     margin-left: 15px;
     border-left: 1px solid #e9eef0;
     padding: 15px 0px;
     color: #62696d;
     margin-top: 0px;
+    text-transform: uppercase;
 }
 .ed-sidebar a {
-       color: #fb545b;
+        color: #62696d;
     text-transform: uppercase;
     font-size: 12px;
 }
@@ -512,7 +513,7 @@ input.ed-projectname {
 .ed-sidebar-sub ul {
     padding: 0px;
     margin-bottom: 0px;
-    padding-left: 30px;
+    padding-left: 20px;
 }
 
 .ed-sidebar-sub ul li:hover .sublist-action {
@@ -1311,6 +1312,7 @@ display: block;}
 	    font-size: 14px;
     float: right;
     line-height: 23px;
+	    color: #fb545b;
 }
 .visible-parent a.disable{
 	text-decoration:line-through;
