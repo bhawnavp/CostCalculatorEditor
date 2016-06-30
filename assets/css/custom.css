@@ -1194,6 +1194,7 @@ box-shadow: none;
     line-height: 34px;
     cursor: pointer;
         margin: 0px 6px;
+            color: #bec5c9;
 }
 .lead-gen .dropdown-item {
     display: block;
