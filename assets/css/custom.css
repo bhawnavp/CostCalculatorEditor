@@ -567,9 +567,7 @@ input.ed-projectname {
 }
 .color-select ul {
     float: left;
-    width: 100%;
     padding: 0px;
-    margin-bottom: 20px;
 }
 .color-select ul li {
     float: left;
@@ -1092,11 +1090,6 @@ a.default:hover, a.default:focus, a.default:active {
 .visible-parent a.disable {
     text-decoration: line-through;
     color: #ccc;
-}
-.bottom-sticky {
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
 }
 span.hollow {
     height: 10px;
