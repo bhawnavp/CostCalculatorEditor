@@ -592,10 +592,11 @@ input.ed-projectname {
 .background-select span:nth-child(2) {
     float: left;
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: #8e989f;
     font-size: 11px;
     font-family: "montserratlight";
+    margin-top: -5px;
 }
 .background-select button:nth-child(4) {
     margin-left: 10px;
@@ -733,7 +734,7 @@ input.ed-projectname {
     width: 100%;
 }
 .setting-detail-box {
-    margin-top: 10px;
+    margin-bottom: 15px;
 }
 .setting-details button {
     margin-top: 10px;
@@ -791,6 +792,7 @@ input.ed-projectname {
     font-size:11px;
     text-transform: uppercase;
     color:#62696d;
+        margin-bottom: 8px;
 }
 .text-group {
     margin-bottom: 15px;
@@ -1175,6 +1177,10 @@ box-shadow: none;
 }
 .lead-gen{
     float: left;
+    margin-bottom:10px;
+}
+.div-check .lead-gen:last-child{
+    margin-bottom:0px;
 }
 .lead-gen .input-group{
     padding-left:0px;
