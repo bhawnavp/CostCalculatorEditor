@@ -90,15 +90,33 @@ $(document).mouseup(function(e) {
 });
 /* End of funtion */
 $(document).on('click', 'a.visible', function() {
-	if(!$(this).hasClass('disable')){
-    $("a.visible").html('<i class="material-icons visibility_off">visibility_off</i>');
-	$('.visible-parent a').addClass('disable');}
-	else{
-		$("a.visible").html('<i class="material-icons">visibility</i>');
-	$('.visible-parent a').removeClass('disable');
-	}
+    if (!$(this).hasClass('disable')) {
+        $("a.visible").html('<i class="material-icons visibility_off">visibility_off</i>');
+        $('.visible-parent a').addClass('disable');
+    } else {
+        $("a.visible").html('<i class="material-icons">visibility</i>');
+        $('.visible-parent a').removeClass('disable');
+    }
 
 })
+
+$(document).on('click', 'a.head,a.sub-head ', function() {
+    $('a.section-head span.circle').removeClass('active');
+    $('span.active-circle').removeClass('active-circle');
+    $(this).siblings("span.hollow").addClass('active-circle');
+})
+$(document).on('click', 'a.sub-head ', function() {
+    $('a.section-head span.circle').removeClass('active');
+    $('span.active-circle').removeClass('active-circle');
+    $(this).find("span").addClass('active-circle');
+})
+$(document).on('click', '.ed-sidebar a.section-head ', function() {
+    $('a.section-head span.circle').removeClass('active');
+    $('span.active-circle').removeClass('active-circle');
+    $('a.head span.active-circle').removeClass('active-circle');
+    $(this).find("span").addClass('active');
+})
+
 
 $(document).on('click', '.editor-tab', function() {
     var toggleValue = $(this).data("toggle");

@@ -63,7 +63,7 @@ input.ed-projectname{border:none;border-left:1px solid #dae2e6;color:#fb545b;flo
 .sidebar{display:none;}
 @media (min-width:768px){
     .editor-sidebar.sidebar{position:fixed;top:62px;bottom:0;left:0;z-index:1000;display:block;padding:0px;/*overflow-x: hidden;
-        overflow-y: auto; */background-color:#fff;border-right:1px solid #dae2e6;}
+                overflow-y: auto; */background-color:#fff;border-right:1px solid #dae2e6;}
     }
     .editor-accordion{float:left;width:100%;}
     .editor-accordion .panel-body{padding:0px;}
@@ -86,8 +86,8 @@ input.ed-projectname{border:none;border-left:1px solid #dae2e6;color:#fb545b;flo
     .ed-sidebar-sub{}
     .ed-sidebar-sub label{font-weight:normal;color:#62696d;background:#f6f8f9;padding:0 5px;font-size:13px;border-radius:5px;}
     .ed-sidebar-sub ul{padding:0px;padding-left:25px;}
-    .ed-sidebar-sub ul li{line-height:1;}
-    .ed-sidebar-sub ul li a.head{width:90%;display:block;padding-top:16px;text-transform:none;color:#8e989f;}
+    .ed-sidebar-sub ul li{line-height:1;    padding-left: 9px;}
+    .ed-sidebar-sub ul li a.head{width:90%;display:block;padding-top:3px;text-transform:none;color:#8e989f;}
     .ed-sidebar-sub ul li a.sublist-action{display:none;transition:all 200ms ease-in 0s;line-height:26px;vertical-align:bottom;margin-right:4px;}
     .ed-sidebar-sub ul li a i{color:#fb545b;font-size:13px;}
     .ed-sidebar-sub ul li a i:hover{color:#f56151;}
@@ -230,7 +230,7 @@ input.ed-projectname{border:none;border-left:1px solid #dae2e6;color:#fb545b;flo
     /*################### Editor Properties css end ###################*/
     .template-section{padding:60px 0px 0px 0px;}
     .circle{height:10px;width:10px;border:1px solid #8e989f;display:inline-block;border-radius:25px;position:relative;left:-15px;vertical-align:middle;background:#fff;top:-2px;}
-    .circle.active{background:#fb545b;}
+    .circle.active{background:#fb545b;    border: none;}
     .panel-title i.corner{display:inline-block;position:relative;left:-8px;vertical-align:middle;font-size:14px;color:#8e989f;top:-1px;}
     .panel-title i.main-ic{font-size:16px;vertical-align:text-bottom;margin-right:4px;color:#bec5c9;}
     .editor-accordion .panel-title{border-bottom:1px solid #e9eef0;}
@@ -238,7 +238,10 @@ input.ed-projectname{border:none;border-left:1px solid #dae2e6;color:#fb545b;flo
     .add-options{display:none;}
     .add-visible-parent{display:block;}
     .add-visible-parent:hover .add-options{display:inline;}
-    .add-options .dropdown-menu{top:100%;left:-13px;min-width:150px;font-size:12px;border-radius:0px;background:#f87b80;/* color: #fff; */border-radius:4px;border:none;}
+    .add-options .dropdown-menu{top:100%;left:-13px;min-width:150px;font-size:12px;border-radius:0px;background:#f87b80;/* color: #fff; */border-radius:4px;border:none;display:none;}
+    .add-options:hover .dropdown-menu {
+    display: block;
+}
     .add-options .dropdown-menu > li > a:hover,.add-options .dropdown-menu > li > a:focus{color:#fb545b;}
     .add-options .dropdown-menu > li > a:hover .add-options-i,.add-options .dropdown-menu > li > a:focus .add-options-i{color:#fb545b;}
     .add-options .dropdown-menu > li > a{color:#fff;padding:3px 15px;text-transform:capitalize;}
@@ -250,3 +253,6 @@ input.ed-projectname{border:none;border-left:1px solid #dae2e6;color:#fb545b;flo
     .visible i{font-size:14px;float:right;line-height:23px;color:#fb545b;}
     .visible-parent a.disable{text-decoration:line-through;color:#ccc;}
     .bottom-sticky{position:absolute;width:100%;bottom:0px;}
+    span.hollow{height:10px;width:10px;display:inline-block;border-radius:25px;position:relative;left:-44px;vertical-align:middle;top:16px;}
+    .sub-head span.hollow{top:-2px;left:-35px;}
+    .hollow.active-circle{background:#fb545b}
