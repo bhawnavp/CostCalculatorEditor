@@ -1227,8 +1227,22 @@ box-shadow: none;
 }
 .fr-toolbar .fr-command.fr-btn i, .fr-popup .fr-command.fr-btn i {
     font-size: 13px;
+    margin: 8px 6.5px;
 }
+.fr-separator.fr-vs {
+    height: 28px;
+    }
 .btn:hover, .btn:focus, .btn.focus {
     color: inherit;
         outline: none;
+}
+.fr-toolbar .fr-command.fr-btn, .fr-popup .fr-command.fr-btn {
+        width: 28px;
+    height: 30px;
+}
+.fr-toolbar .fr-command.fr-btn.fr-dropdown::after, .fr-popup .fr-command.fr-btn.fr-dropdown::after {
+    top: 13.5px;
+}
+.fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content {
+    overflow-x: hidden;
 }
