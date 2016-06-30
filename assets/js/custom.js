@@ -116,8 +116,6 @@ $(document).on('click', '.ed-sidebar a.section-head ', function() {
     $('a.head span.active-circle').removeClass('active-circle');
     $(this).find("span").addClass('active');
 })
-
-
 $(document).on('click', '.editor-tab', function() {
     var toggleValue = $(this).data("toggle");
     //console.log('*[data-section="' + toggleValue + '"]');
