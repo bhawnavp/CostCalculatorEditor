@@ -58,6 +58,9 @@ $(document).ready(function() {
 
     /* wysiwyg editor */
 
+    $('.wysiwyg').froalaEditor({
+        toolbarButtons: ['bold', '|', 'italic', '|', 'underline', '|', 'color', '|', 'fontSize', ],
+    })
 
     /* wysiwyg editor */
 

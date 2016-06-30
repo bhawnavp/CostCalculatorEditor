@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Editor</title>
     <!-- css start -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/bootstrap-switch.css">
     <link rel="stylesheet" href="assets/css/bootstrap-select.css">
+    <link rel="stylesheet" href="assets/css/wysiwyg.css">
     <link rel="stylesheet" href="assets/css/custom.css">
     <!-- template css -->
     <link href="assets/template/css/fonts.css" rel="stylesheet">
@@ -226,10 +228,11 @@
                         Landing Page Properties
                     </div>
                 </div>
-                <div class="sidebar-bottomselector">
+                <div class="sidebar-bottomselector editor">
                     <div class="col-xs-12 no-padding">
                         <div class="type-details"><span class="form-label">Heading:</span>
-                            <div class="heading-box">
+                            <textarea class="wysiwyg"></textarea>
+                            <div class="heading-box hide">
                                 <div class="heading-box-top">
                                     <select class="select-default" data-width="fit" data-style="landing-dropdown">
                                         <option>H1</option>
@@ -250,19 +253,7 @@
                         </div>
                         <div class="type-details">
                             <span class="form-label">Button:</span>
-                            <input type="text" class="btn-detail-text" />
-                            <!-- <div class="btn-detail-size col-xs-12 no-padding">
-                        <span class="col-xs-2 no-padding">Size:</span>
-                        <select class="select-default" data-width="fit">
-                            <option>XL</option>
-                            <option>XXL</option>
-                            <option>XXXL</option>
-                        </select>
-                    </div>
-                    <div class="btn-detail-link col-xs-12 no-padding">
-                        <span class="col-xs-2 no-padding">Link:</span>
-                        <input type="text" class="col-xs-10 placeholder-color1" value="http://" placeholder="http://" />
-                    </div> -->
+                            <input type="text" class="detail-text" />
                         </div>
                         <div class="type-details">
                             <span class="form-label">Logo:</span>
@@ -278,11 +269,39 @@
                                         <input type="text" class="file-input" placeholder="No file" readonly>
                                         <label class="input-group-btn">
                                             <span class="btn btn-default btn-flat btn-basic2">
-                                        Upload <input type="file" style="display: none;">
+                                        UPLOAD <input type="file" style="display: none;">
                                     </span>
                                         </label>
                                     </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="type-details">
+                            <span class="form-label">Logo:</span>
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="lever"></span>
+                                </label>
+                            </div>
+                            <div class=" div-check">
+                                <div class="lead-gen">
+    <div class="input-group">
+      <input type="text" class="form-control" aria-label="Text input with dropdown button">
+      <div class="input-group-btn">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Action
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <a class="dropdown-item" href="#">Something else here</a>
+          <div role="separator" class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Separated link</a>
+        </div>
+      </div>
+    </div><a href="#" class="form-control-icon"><i class="material-icons">close</i></a>
+  </div> 
                             </div>
                         </div>
                         <div class="type-details color-select">
@@ -310,14 +329,20 @@
                         <span class="form-label">Settings:</span>
                         <div class="col-xs-12 no-padding setting-detail-box">
                             <span>Powered by Venture Pact</span>
-                            <div class="desc-switch">
-                                <input type="checkbox" name="properties-checkbox" checked data-size="mini">
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="lever"></span>
+                                </label>
                             </div>
                         </div>
                         <div class="col-xs-12 no-padding setting-detail-box">
                             <span>Privacy Policy</span>
-                            <div class="desc-switch">
-                                <input type="checkbox" name="properties-checkbox" checked data-size="mini">
+                            <div class="switch">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="lever"></span>
+                                </label>
                             </div>
                         </div>
                         <button type="button" class="btn btn-default btn-flat btn-basic2"><i class="material-icons">image</i> Use Another Teamplate</button>
@@ -882,6 +907,7 @@
     <script src="assets/js/responsive-tabs.js"></script>
     <script src="assets/js/bootstrap-wysiwyg.js"></script>
     <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+    <script src="assets/js/wysiwyg.js"></script>
     <script src="assets/js/custom.js"></script>
 </body>
 

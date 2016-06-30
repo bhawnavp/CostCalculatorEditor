@@ -290,7 +290,7 @@ input.ed-projectname {
 .ed-sidebar a {
     color: #62696d;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: 11px;
 }
 .editor-accordion .panel-group .panel + .panel {
     margin-top: 0px;
@@ -309,7 +309,7 @@ input.ed-projectname {
     border-bottom: 1px solid #e9eef0;
     line-height: 21px;
 }
-.dropdown-menu:before {
+.editor-accordion .dropdown-menu:before {
     position: absolute;
     top: -7px;
     left: 13px;
@@ -347,7 +347,7 @@ input.ed-projectname {
 .ed-sidebar a.sub-head {
     transition: all 200ms ease-in 0s;
     color: #fb545b;
-    font-size: 12px;
+    font-size: 11px;
     padding-top: 20px;
     display: block;
     padding-left: 20px;
@@ -383,6 +383,7 @@ input.ed-projectname {
     padding-top: 3px;
     text-transform: none;
     color: #8e989f;
+    font-size: 12px;
 
 }
 .ed-sidebar-sub ul li a.sublist-action {
@@ -558,9 +559,7 @@ input.ed-projectname {
     margin-top: 5px;
 }
 .color-select span {
-    float: left;
     width: 100%;
-    margin-bottom: 10px;
 }
 .color-select ul {
     float: left;
@@ -594,8 +593,9 @@ input.ed-projectname {
     float: left;
     width: 100%;
     margin-bottom: 10px;
-    color: #c7cdd0;
-    font-size: 12px;
+    color: #8e989f;
+    font-size: 11px;
+    font-family: "montserratlight";
 }
 .background-select button:nth-child(4) {
     margin-left: 10px;
@@ -665,13 +665,12 @@ input.ed-projectname {
     padding-top: 20px;
     padding-bottom: 20px;
 }
-.btn-detail-text {
+.detail-text {
     border: 1px solid #dae2e6;
     padding: 8px;
-    padding-top: 5px;
     display: block;
     width: 100%;
-    margin-top: 15px;
+    color:#62696d;
 }
 .btn-detail-size .select-default {
     background: #f6f8f9;
@@ -789,7 +788,7 @@ input.ed-projectname {
     line-height: 24px;
     float: left;
     min-width: 17px;
-    font-size:12px;
+    font-size:11px;
     text-transform: uppercase;
     color:#62696d;
 }
@@ -1156,4 +1155,63 @@ span.hollow {
     background-color: #f56151;
     left: 14px;
     content: "OFF";
+}
+.editor .form-control {
+        border: 1px solid #dae2e6;
+box-shadow: none;
+    border-radius: 0px;
+}
+.editor .dropdown-toggle::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-right: .25rem;
+    margin-left: .25rem;
+    vertical-align: middle;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent;
+}
+.lead-gen{
+    float: left;
+}
+.lead-gen .input-group{
+    padding-left:0px;
+    width:94%;
+    float:left;
+}
+.lead-gen .dropdown-toggle{
+    background: none;
+    border: 1px solid #dae2e6;
+    border-radius: 0px;font-size: 11px;
+        text-transform: uppercase;
+        padding: 8px;
+        padding-bottom: 9px;
+}
+.form-control-icon i{
+    font-size: 13px;
+    line-height: 34px;
+    cursor: pointer;
+        margin: 0px 6px;
+}
+.lead-gen .dropdown-item {
+    display: block;
+    width: 100%;
+    padding: 3px 20px;
+    clear: both;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #373a3c;
+    text-align: inherit;
+    white-space: nowrap;
+    background: 0 0;
+    border: 0;
+}
+.fr-box {
+        width: 100%;
+    float: left;
+}
+.fr-toolbar .fr-command.fr-btn i, .fr-popup .fr-command.fr-btn i {
+    font-size: 13px;
 }
