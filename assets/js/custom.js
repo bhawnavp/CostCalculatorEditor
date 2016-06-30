@@ -11,7 +11,6 @@ $(document).ready(function() {
 
     var panelHeight = $(".panel-scroll").height();
     var panelMaxHeight = $(window).height() - 203;
-    console.log(panelMaxHeight, panelHeight);
     if (panelHeight > panelMaxHeight) {
         pHeight = panelMaxHeight;
         console.log("enter");
@@ -132,13 +131,11 @@ $(document).on('click', '.ed-sidebar a.section-head ', function() {
     $('a.head span.active-circle').removeClass('active-circle');
     $(this).find("span").addClass('active');
 })
-$('#show-check').click(function() {
-    console.log(hi);
+$('.type-details .show-check').click(function() {
     if (this.checked)
-        $('.div-check').fadeIn('slow');
+        $('.type-details .div-check').fadeIn('slow');
     else
-        $('.div-check').fadeOut('slow');
-
+        $('.type-details .div-check').fadeOut('slow');
 });
 $(document).on('click', '.editor-tab', function() {
     var toggleValue = $(this).data("toggle");

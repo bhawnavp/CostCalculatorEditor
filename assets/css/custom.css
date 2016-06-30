@@ -312,7 +312,7 @@ input.ed-projectname {
 .editor-accordion .dropdown-menu:before {
     position: absolute;
     top: -7px;
-    left: 13px;
+    right: 10px;
     display: inline-block;
     border-right: 7px solid transparent;
     border-bottom: 7px solid #f87b80;
@@ -1024,13 +1024,18 @@ a.default:hover, a.default:focus, a.default:active {
 }
 .add-visible-parent {
     display: block;
+        padding-right: 10px;
 }
 .add-visible-parent:hover .add-options {
     display: inline;
+    width: 40px;
+    text-align: center;
+    float: right;
+    padding-left: 16px;
 }
 .add-options .dropdown-menu {
-    top: 100%;
-    left: -13px;
+    top: 93%;
+    left: -126px;
     min-width: 150px;
     font-size: 12px;
     border-radius: 0px;
@@ -1060,6 +1065,7 @@ a.default:hover, a.default:focus, a.default:active {
 }
 .visible-parent {
     display: block;
+        padding-right: 10px;
 }
 .visible-parent:hover .visible {
     display: inline;
@@ -1139,12 +1145,12 @@ span.hollow {
 }
 
 .switch label .lever:after {
-    content: "ON";
+    content: "OFF";
     position: absolute;
     display: inline-block;
     width: 26px;
     height: 18px;
-    background-color: #00c494;
+    background-color: #f56151;
     border-radius: 8px;
     left: 0px;
     top: -4px;
@@ -1154,9 +1160,9 @@ span.hollow {
 }
 
 .switch label input[type=checkbox]:checked+.lever:after {
-    background-color: #f56151;
+    background-color: #00c494;
     left: 14px;
-    content: "OFF";
+    content: "ON";
 }
 .editor .form-control {
         border: 1px solid #dae2e6;
@@ -1221,4 +1227,8 @@ box-shadow: none;
 }
 .fr-toolbar .fr-command.fr-btn i, .fr-popup .fr-command.fr-btn i {
     font-size: 13px;
+}
+.btn:hover, .btn:focus, .btn.focus {
+    color: inherit;
+        outline: none;
 }
