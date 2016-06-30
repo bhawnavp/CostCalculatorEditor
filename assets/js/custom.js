@@ -131,7 +131,7 @@ $(document).on('click', '.ed-sidebar a.section-head ', function() {
     $('a.head span.active-circle').removeClass('active-circle');
     $(this).find("span").addClass('active');
 })
-$('.show-check').click(function() {
+$('.show-check').change(function() {
     if ($(this).prop('checked')) {
         $(this).parents('.type-details').find('.div-check').fadeIn('slow');
     } else
