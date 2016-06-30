@@ -510,6 +510,7 @@ input.ed-projectname {
     line-height: 25px;
     font-size: 12px;
     text-transform: uppercase;
+    color: #62696d;
 }
 .card-layout .dropdown-toggle {
     cursor: pointer;
@@ -607,7 +608,7 @@ input.ed-projectname {
 /* landing css start */
 .sidebar-bottomselector {
     display: inline-block;
-    font-size: 13px;
+    font-size: 12px;
     color: #8e989f;
 }
 .heading-box {
@@ -1226,15 +1227,25 @@ box-shadow: none;
     float: left;
 }
 .fr-toolbar .fr-command.fr-btn i, .fr-popup .fr-command.fr-btn i {
-    font-size: 13px;
-    margin: 8px 6.5px;
+    font-size: 11px;
+    margin: 6px 4.5px;
+    color: #62696d;
 }
 .fr-separator.fr-vs {
     height: 28px;
     }
 .btn:hover, .btn:focus, .btn.focus {
     color: inherit;
-        outline: none;
+    outline: none !important;
+    background: none;
+    box-shadow: none;
+}
+.btn.btn-basic2:hover, .btn.btn-basic2:focus, .btn.btn-basic2:active {
+    color: #f56151;
+    border: 1px solid #dae2e6;
+    background: none;
+    outline: none;
+    box-shadow: none;
 }
 .fr-toolbar .fr-command.fr-btn, .fr-popup .fr-command.fr-btn {
         width: 28px;
@@ -1245,4 +1256,23 @@ box-shadow: none;
 }
 .fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content {
     overflow-x: hidden;
+}
+.fr-toolbar.fr-top {
+    border: 1px solid #dae2e6;
+    box-shadow: none;
+    }
+    .fr-box.fr-basic.fr-top .fr-wrapper {
+   
+    border: 1px solid #dae2e6;
+    box-shadow: none;
+    border-top: none;
+}
+.fr-wrapper .fr-placeholder{
+    height:24px !important;
+
+}
+.fr-command.fr-btn + .fr-dropdown-menu .fr-dropdown-wrapper .fr-dropdown-content ul.fr-dropdown-list li a {
+    font-size:11px;
+        padding: 0 14px;
+    padding-right: 27px;
 }
