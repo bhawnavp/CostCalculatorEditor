@@ -297,6 +297,7 @@ input.ed-projectname {
 }
 .editor-accordion .panel-default > .panel-heading + .panel-collapse > .panel-body {
     border-top: none;
+        border-bottom: 1px solid #e9eef0;
 }
 .editor-accordion .panel {
     border: none;
@@ -350,9 +351,10 @@ input.ed-projectname {
     padding-top: 20px;
     display: block;
     padding-left: 20px;
-    color: #62696d;
+    color: #8e989f;
     text-transform: none;
     line-height: 1;
+    text-transform:uppercase;
 }
 .ed-sidebar a:hover {
     text-decoration: none;
@@ -373,7 +375,7 @@ input.ed-projectname {
 }
 .ed-sidebar-sub ul li {
     line-height: 1;
-    padding-left: 9px;
+    padding-left: 19px;
 }
 .ed-sidebar-sub ul li a.head {
     width: 90%;
@@ -381,6 +383,7 @@ input.ed-projectname {
     padding-top: 3px;
     text-transform: none;
     color: #8e989f;
+
 }
 .ed-sidebar-sub ul li a.sublist-action {
     display: none;
@@ -503,7 +506,9 @@ input.ed-projectname {
 .card-layout {
     display: block;
     padding: 8px 20px;
-    line-height: 20px;
+    line-height: 25px;
+    font-size: 12px;
+    text-transform: uppercase;
 }
 .card-layout .dropdown-toggle {
     cursor: pointer;
@@ -552,14 +557,6 @@ input.ed-projectname {
     display: block;
     margin-top: 5px;
 }
-.color-select {
-    border-bottom: 1px solid #dae2e6;
-    float: left;
-    padding-left: 4px;
-    padding-right: 4px;
-    width: 100%;
-    margin-bottom: 20px;
-}
 .color-select span {
     float: left;
     width: 100%;
@@ -568,6 +565,7 @@ input.ed-projectname {
 .color-select ul {
     float: left;
     padding: 0px;
+    margin-bottom:0px;
 }
 .color-select ul li {
     float: left;
@@ -587,15 +585,6 @@ input.ed-projectname {
 }
 .orange {
     background: #e97252;
-}
-.background-select {
-    border-bottom: 1px solid #dae2e6;
-    float: left;
-    padding-left: 4px;
-    padding-right: 4px;
-    width: 100%;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
 }
 .background-select span {
     float: left;
@@ -679,12 +668,10 @@ input.ed-projectname {
 .btn-detail-text {
     border: 1px solid #dae2e6;
     padding: 8px;
-    padding-bottom: 5px;
     padding-top: 5px;
     display: block;
     width: 100%;
     margin-top: 15px;
-    margin-bottom: 15px;
 }
 .btn-detail-size .select-default {
     background: #f6f8f9;
@@ -765,8 +752,6 @@ input.ed-projectname {
 .landing-inputfile {
     float: left;
     width: 100%;
-    margin-bottom: 15px;
-    margin-top: 15px;
 }
 .file-input {
     border: 1px solid #dae2e6;
@@ -804,6 +789,9 @@ input.ed-projectname {
     line-height: 24px;
     float: left;
     min-width: 17px;
+    font-size:12px;
+    text-transform: uppercase;
+    color:#62696d;
 }
 .text-group {
     margin-bottom: 15px;
@@ -994,7 +982,7 @@ a.default:hover, a.default:focus, a.default:active {
 .circle {
     height: 10px;
     width: 10px;
-    border: 1px solid #8e989f;
+    border: 1px solid #bec5c9;
     display: inline-block;
     border-radius: 25px;
     position: relative;
@@ -1013,8 +1001,8 @@ a.default:hover, a.default:focus, a.default:active {
     left: -8px;
     vertical-align: middle;
     font-size: 14px;
-    color: #8e989f;
-    top: -1px;
+    color: #bec5c9;
+    top: -2px;
 }
 .panel-title i.main-ic {
     font-size: 16px;
@@ -1097,7 +1085,7 @@ span.hollow {
     display: inline-block;
     border-radius: 25px;
     position: relative;
-    left: -44px;
+    left: -53px;
     vertical-align: middle;
     top: 16px;
 }
@@ -1106,5 +1094,66 @@ span.hollow {
     left: -35px;
 }
 .hollow.active-circle {
-    background: #fb545b
+    background: #fb545b;
+}
+/* Switch */
+.switch {
+    display: inline-block;
+    float: right;
+}
+.switch label {
+    cursor: pointer;
+    margin-bottom: 0px;
+}
+
+.switch label input[type=checkbox] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.switch label input[type=checkbox][disabled]+.lever:after,
+.switch label input[type=checkbox][disabled]:checked+.lever:after {
+    background-color: #00c494;
+}
+
+.switch label input[type=checkbox]:checked+.lever {
+    border: 1px solid #dae2e6;
+}
+
+.switch label .lever {
+    content: "";
+    display: inline-block;
+    position: relative;
+    width: 39px;
+    height: 12px;
+    border: 1px solid #dae2e6;
+    border-radius: 25px;
+    margin-right: 10px;
+    transition: background 0.3s ease;
+    vertical-align: middle;
+        font-size: 9px;
+    padding: 3px 4px;
+    font-family: "montserratbold";
+}
+
+.switch label .lever:after {
+    content: "ON";
+    position: absolute;
+    display: inline-block;
+    width: 26px;
+    height: 18px;
+    background-color: #00c494;
+    border-radius: 8px;
+    left: 0px;
+    top: -4px;
+    color: #fff;
+    transition: left 0.3s ease, background .3s ease, box-shadow 0.1s ease;
+    padding: 3px 5px;
+}
+
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #f56151;
+    left: 14px;
+    content: "OFF";
 }
