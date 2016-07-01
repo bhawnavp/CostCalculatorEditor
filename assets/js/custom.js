@@ -62,7 +62,32 @@ $(document).ready(function() {
     })
 
     /* wysiwyg editor */
+    var max_fields = 3; //maximum input boxes allowed
+    var wrapper = $(".input_fields_wrap"); //Fields wrapper
+    var add_button = $(".add_field_button"); //Add button ID
 
+    var x = 1; //initlal text box count
+    $(add_button).click(function(e) { //on add input button click
+        e.preventDefault();
+        if (x < max_fields) { //max input box allowed
+            x++; //text box increment
+            $(wrapper).append(`<div class="lead-gen"><div class="input-group"><label class="check"><input type="checkbox" value="" name="manadatory" id="manadatory` + x + `"><label for="manadatory` + x + `"> </label>*</label><select class="select-default" data-width="100px"><option>Name</option>
+                                            <option>Text</option>
+                                            <option>Email</option>
+                                            <option>Password</option>
+                                        </select>
+                                        <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                                    </div><a href="#" class="form-control-icon remove_field"><i class="material-icons">close</i></a>
+                                </div>`); //add input box
+            $('.select-default').selectpicker('refresh');
+        }
+    });
+
+    $(document).on("click", ".remove_field", function(e) { //user click on remove text
+        e.preventDefault();
+        $(this).parent('.lead-gen').remove();
+        x--;
+    })
 
 
 
@@ -137,9 +162,4 @@ $('.show-check').change(function() {
     } else
         $(this).parents('.type-details').find('.div-check').fadeOut('slow');
 });
-$(document).on('click', '.editor-tab', function() {
-    var toggleValue = $(this).data("toggle");
-    //console.log('*[data-section="' + toggleValue + '"]');
-    $('*[data-section="' + toggleValue + '"]').removeClass('hide').siblings().addClass('hide');
-
-})
+$(".select-default").selectpicker();
