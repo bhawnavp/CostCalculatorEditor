@@ -599,152 +599,6 @@ input.ed-projectname {
 /*################### Editor Properties css start ###################*/
 
 
-/* sidebar css start */
-
-.sidebar-layout {
-    height: 100vh;
-    border: 1px solid #dae2e6;
-    border-right: 0px;
-    box-shadow: -2px 0 6px -1px rgba(0, 0, 0, 0.2);
-    background: #fff;
-    z-index: 99;
-}
-
-.sidebar-topselector {
-    border-bottom: 1px solid #dae2e6;
-    font-size: 13px;
-    color: #8e989f;
-}
-
-.sidebar-offcanvas {
-    padding-right: 0px;
-    top: 60px;
-    z-index: 9;
-}
-
-.card-layout {
-    display: block;
-    padding: 8px 20px;
-    line-height: 25px;
-    font-size: 12px;
-    text-transform: uppercase;
-    color: #62696d;
-}
-
-.card-layout .dropdown-toggle {
-    cursor: pointer;
-}
-
-.card-layout.open .dropdown-toggle {
-    box-shadow: none;
-}
-
-.card-layout i {
-    font-size: 14px;
-    position: relative;
-    top: 3px;
-}
-
-.sidebar-bottomoutr {
-    padding: 20px;
-}
-
-.layout-select {
-    border-bottom: 1px solid #dae2e6;
-    float: left;
-    padding-left: 4px;
-    padding-right: 4px;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-.layout-select-box {
-    float: left;
-}
-
-.layout-select a {
-    transition: all 200ms ease-in 0s;
-    border: 3px solid #fff;
-    display: inline-block;
-}
-
-.layout-select .layout-select-box:first-child {
-    display: inline-block;
-    margin-bottom: 20px;
-    margin-right: 14px;
-}
-
-.layout-select a:hover {
-    border: 3px solid #62cbe8;
-}
-
-.layout-select a.active {
-    border: 3px solid #62cbe8;
-}
-
-.layout-select span {
-    font-size: 12px;
-    display: block;
-    margin-top: 5px;
-}
-
-.color-select span {
-    width: 100%;
-}
-
-.color-select ul {
-    float: left;
-    padding: 0px;
-    margin-bottom: 0px;
-}
-
-.color-select ul li {
-    float: left;
-    width: auto;
-    margin-right: 10px;
-}
-
-.color-select ul li a.color-option {
-    float: left;
-    width: 24px;
-    height: 24px;
-}
-
-.blue {
-    background: #62cbe8;
-}
-
-.green {
-    background: #28c2ba;
-}
-
-.orange {
-    background: #e97252;
-}
-
-.background-select span {
-    float: left;
-    width: 100%;
-}
-
-.background-select span:nth-child(2) {
-    float: left;
-    width: 100%;
-    margin-bottom: 15px;
-    color: #8e989f;
-    font-size: 11px;
-    font-family: "montserratlight";
-    margin-top: -5px;
-}
-
-.background-select button:nth-child(4) {
-    margin-left: 10px;
-}
-
-
-/* sidebar css end */
-
 
 
 
@@ -912,6 +766,152 @@ span.hollow {
 
 
 /****** RIGHT PANEL ******/
+
+/* sidebar css start */
+
+.sidebar-layout {
+    height: 100vh;
+    border: 1px solid #dae2e6;
+    border-right: 0px;
+    box-shadow: -2px 0 6px -1px rgba(0, 0, 0, 0.2);
+    background: #fff;
+    z-index: 99;
+}
+
+.sidebar-topselector {
+    border-bottom: 1px solid #dae2e6;
+    font-size: 13px;
+    color: #8e989f;
+}
+
+.sidebar-offcanvas {
+    padding-right: 0px;
+    top: 60px;
+    z-index: 9;
+}
+
+.card-layout {
+    display: block;
+    padding: 8px 20px;
+    line-height: 25px;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #62696d;
+}
+
+.card-layout .dropdown-toggle {
+    cursor: pointer;
+}
+
+.card-layout.open .dropdown-toggle {
+    box-shadow: none;
+}
+
+.card-layout i {
+    font-size: 14px;
+    position: relative;
+    top: 3px;
+}
+
+.sidebar-bottomoutr {
+    padding: 20px;
+}
+
+.layout-select {
+    border-bottom: 1px solid #dae2e6;
+    float: left;
+    padding-left: 4px;
+    padding-right: 4px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.layout-select-box {
+    float: left;
+}
+
+.layout-select a {
+    transition: all 200ms ease-in 0s;
+    border: 3px solid #fff;
+    display: inline-block;
+}
+
+.layout-select .layout-select-box:first-child {
+    display: inline-block;
+    margin-bottom: 20px;
+    margin-right: 14px;
+}
+
+.layout-select a:hover {
+    border: 3px solid #62cbe8;
+}
+
+.layout-select a.active {
+    border: 3px solid #62cbe8;
+}
+
+.layout-select span {
+    font-size: 12px;
+    display: block;
+    margin-top: 5px;
+}
+
+.color-select span {
+    width: 100%;
+}
+
+.color-select ul {
+    float: left;
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+.color-select ul li {
+    float: left;
+    width: auto;
+    margin-right: 10px;
+}
+
+.color-select ul li a.color-option {
+    float: left;
+    width: 24px;
+    height: 24px;
+}
+
+.blue {
+    background: #62cbe8;
+}
+
+.green {
+    background: #28c2ba;
+}
+
+.orange {
+    background: #e97252;
+}
+
+.background-select span {
+    float: left;
+    width: 100%;
+}
+
+.background-select span:nth-child(2) {
+    float: left;
+    width: 100%;
+    margin-bottom: 15px;
+    color: #8e989f;
+    font-size: 11px;
+    font-family: "montserratlight";
+    margin-top: -5px;
+}
+
+.background-select button:nth-child(4) {
+    margin-left: 10px;
+}
+
+
+/* sidebar css end */
 
 /* landing css start */
 
