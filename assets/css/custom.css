@@ -1463,6 +1463,7 @@ a.default:active {
     padding-bottom: 9px;
     border-right: none;
     margin-left: 9px !important;
+    color: #8e989f;
 }
 
 .form-control-icon i {
@@ -1605,7 +1606,15 @@ a.default:active {
     padding: 0 14px;
     padding-right: 27px;
 }
-
-
+.lead-gen .btn-default:active:hover,.lead-gen  .btn-default.active:hover, .lead-gen .open > .dropdown-toggle.btn-default:hover, .lead-gen .btn-default:active:focus, .lead-gen .btn-default.active:focus, .lead-gen .open > .dropdown-toggle.btn-default:focus, .lead-gen .btn-.default:active.focus, .lead-gen .btn-default.active.focus, .lead-gen .open > .dropdown-toggle.btn-default.focus {
+    color: #8e989f;
+    background: none;
+    border-color: inherit;
+}
+.lead-gen .dropdown-menu > li > a{
+        color: #8e989f;
+    font-size: 12px;
+    padding: 3px 10px;
+}
 
 /****** RIGHT PANEL END ***/
